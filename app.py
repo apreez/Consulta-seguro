@@ -11,7 +11,7 @@ st.set_page_config(
 
 # ── Contraseña admin (cambiar aquí) ─────────────────────────────────────────
 # Para cambiarla: reemplaza el string dentro de hashlib.sha256(b"TU_CLAVE_AQUI")
-ADMIN_PASSWORD_HASH = hashlib.sha256(b"Verisure2024!").hexdigest()
+ADMIN_PASSWORD_HASH = hashlib.sha256(b"Verisure!2026").hexdigest()
 
 def check_password(pwd: str) -> bool:
     return hashlib.sha256(pwd.encode()).hexdigest() == ADMIN_PASSWORD_HASH
